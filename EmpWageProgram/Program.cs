@@ -11,6 +11,7 @@ namespace EmpWageProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Employee Wage Program");
+            EmployeeAttendance.CheckAttendance();
             Console.ReadLine();
         }
     }
