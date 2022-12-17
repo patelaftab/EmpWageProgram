@@ -11,17 +11,21 @@ namespace EmpWageProgram
         public static void CheckAttendance()
         {
             int IS_FULL_TIME = 1;
+            int EMP_WAGE_PER_HR = 20;
+            int emphrs = 0;
+            int empwage = 0;
             Random random= new Random();
             int empcheck = random.Next(0, 2);
             if(empcheck == IS_FULL_TIME)
             {
-                Console.WriteLine("Employee Is Present");
+                emphrs = 8;
             }
             else 
             {
-                Console.WriteLine("Employee Is Absent");
+                emphrs = 0;
             }
-
+            empwage = emphrs * EMP_WAGE_PER_HR;
+            Console.WriteLine("Employee Wage is :" +empwage);
         }
     }
 }
